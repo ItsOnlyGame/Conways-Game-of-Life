@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+
+group 'com.main'
+
+mainClassName = "com.main.Main"
+
+targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+shadowJar {
+    archiveBaseName = 'Conways-Game-of-Life'
+    archiveClassifier = ''
+    archiveVersion = '1.0.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
